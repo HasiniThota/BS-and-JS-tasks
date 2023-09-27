@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Task-2</title>
+</head>
+<body>
+    <h2>Alphabetical Order</h2>
+    <script>
+        // function order(str){
+        //     return str.split('').sort().join('');
+        // }
+        // console.log("Example String: webmaster")
+        // console.log(order("webmaster"));
+        function Sort(){
+            var str=document.getElementById("str").value;
+            document.getElementById('output').textContent=str.split('').sort().join('');
+        }
+    </script>
+    Enter a String: <input type="text"id="str"><br>
+    <div class="button">
+        <input type="button" onClick="Sort()" Value="Submit" />
+    </div><br>
+    <b>Letters of the string in alphabetical order: </b> <span id="output"></span>
+</body>
+</html>
